@@ -1,0 +1,23 @@
+<!DOCTYPE >
+<html>
+<head>
+	<script src="jquery-1.6.1.js"></script>
+	<script src="jquery.rdfquery.core-1.0.js"></script>
+	<script src="jquery.rdfquery.rdfa-1.0.js"></script>
+	<script src="jquery.rdfquery.rules-1.0.js"></script>	
+	<script>
+		$.post("/example.rdf", {}, function(text) {
+			var res = $.rdf().load(text, {});
+			res.prefix('foaf', 'http://xmlns.com/foaf/0.1/')
+			.where("?person a foaf:Person")
+			.each(function() {
+				console.log(this.name);
+				console.log(this.person);
+			});
+			console.log(res);
+		}, "xml");
+	</script>
+</head>
+<body>
+</body>
+</html>
