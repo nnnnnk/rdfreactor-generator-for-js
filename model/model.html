@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Hello RDF</title>
+<script src="jquery-1.6.1.js"></script>
+<script src="jquery.rdfquery.core-1.0.js"></script>
+<script src="jquery.rdfquery.rdfa-1.0.js"></script>
+<script src="jquery.rdfquery.rules-1.0.js"></script>
+</head>
+<script>
+
+	$(function() { // main
+		$.ajax({
+			url: 'nnnnnk.rdf',
+			dataType: 'xml',
+			success: function(data){
+				parseRdf(data);
+			}
+		});
+	});
+	
+	function parseRdf(data) {
+		var rdf = $.rdf().load(data, {});
+		alert($.param(rdf));
+	}
+	
+	
+</script>
+<body>
+Hello world!
+<div id="content"></div>
+</body>
+</html>

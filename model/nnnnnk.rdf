@@ -1,0 +1,309 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<foaf:Person rdf:about="http://nnnnnk.myopenid.com/">
+<foaf:openid rdf:resource="http://nnnnnk.myopenid.com/"></foaf:openid>
+<foaf:givenName>Nikolay</foaf:givenName>
+<foaf:givenName>nikov</foaf:givenName>
+<foaf:familyName>Krasilnikov</foaf:familyName>
+<foaf:name>Nikolay Krasilnikov</foaf:name>
+<foaf:img rdf:resource="http://nnnnnk.name/i.jpg"></foaf:img>
+<foaf:mbox rdf:resource="nnnnnk@gmail.com"></foaf:mbox>
+<foaf:phone rdf:resource="+7 (911) 216-55-03"></foaf:phone>
+<dc:description>I'm postgraduate student at Saint Petersburg State University of Information Technologies, Mechanics and Optics,junior software engineer in Sun Microsystems and
+teacher at Saint Petersburg Lyceum 239.
+</dc:description>
+
+<foaf:knows>
+<foaf:Person rdf:about="noid0">
+
+
+
+
+
+
+
+
+</foaf:Person>
+</foaf:knows>
+<foaf:knows>
+<foaf:Person rdf:about="http://alexey.vladykin.name/">
+
+
+
+</foaf:Person>
+</foaf:knows>
+<foaf:knows>
+<foaf:Person rdf:about="http://natalia.vladykina.name/">
+
+
+
+
+</foaf:Person>
+</foaf:knows>
+<foaf:knows>
+<foaf:Person rdf:about="http://v-lotoreichik.livejournal.com/">
+
+
+
+
+</foaf:Person>
+</foaf:knows>
+<foaf:knows>
+<foaf:Person rdf:about="http://www.google.com/profiles/antonnaz">
+
+
+
+
+
+
+</foaf:Person>
+</foaf:knows>
+<foaf:knows>
+<foaf:Person rdf:about="http://www.myspace.com/288474387">
+
+
+
+
+
+
+</foaf:Person>
+</foaf:knows>
+<foaf:knows>
+<foaf:Person rdf:about="http://osntest.myopenid.com/">
+
+
+
+
+
+
+</foaf:Person>
+</foaf:knows>
+
+<foaf:knows>
+<foaf:Person rdf:about="http://vkontakte.ru/id4092411">
+
+
+
+
+
+
+
+
+</foaf:Person>
+</foaf:knows>
+<foaf:knows>
+<foaf:Person rdf:about="http://www.google.com/profiles/zolfia">
+
+
+
+</foaf:Person>
+</foaf:knows>
+<foaf:knows>
+<foaf:Person rdf:about="http://seregue.livejournal.com/">
+
+
+
+
+</foaf:Person>
+</foaf:knows>
+<foaf:knows>
+<foaf:Person rdf:about="http://www.facebook.com/heatherfalls">
+
+
+
+</foaf:Person>
+
+</foaf:knows>
+<foaf:knows>
+<foaf:Person rdf:about="http://alexanderkrass.habrahabr.ru/">
+
+
+
+</foaf:Person>
+</foaf:knows>
+<foaf:knows>
+<foaf:Person rdf:about="http://boomburum.habrahabr.ru/">
+
+
+</foaf:Person>
+</foaf:knows>
+<foaf:knows>
+<foaf:Person rdf:about="http://shenderovich.livejournal.com/">
+
+
+
+
+</foaf:Person>
+</foaf:knows>
+<foaf:knows>
+<foaf:Person rdf:about="http://www.google.com/profiles/dinarochka">
+
+
+
+
+
+
+
+
+
+</foaf:Person>
+</foaf:knows>
+<foaf:knows>
+<foaf:Person rdf:about="https://me.yahoo.com/a/ghYCVIoKucewVqwYLD1280HWXw--">
+
+
+
+
+
+
+</foaf:Person>
+</foaf:knows>
+<foaf:knows>
+<foaf:Person rdf:about="http://pashka.myopenid.com/">
+
+
+
+</foaf:Person>
+</foaf:knows>
+<foaf:knows>
+<foaf:Person rdf:about="http://saitova.myopenid.com/">
+
+
+
+
+
+
+</foaf:Person>
+</foaf:knows>
+<foaf:knows>
+<foaf:Person rdf:about="http://www.google.com/profiles/ansafonov">
+
+
+
+
+
+</foaf:Person>
+</foaf:knows>
+<foaf:knows>
+<foaf:Person rdf:about="http://www.google.com/profiles/brayvo">
+
+
+
+
+
+</foaf:Person>
+</foaf:knows>
+<foaf:knows>
+<foaf:Person rdf:about="http://aruseni.myopenid.com/">
+
+
+
+</foaf:Person>
+</foaf:knows>
+<foaf:knows>
+<foaf:Person rdf:about="http://noli-me-tangere.myopenid.com/">
+
+
+
+
+
+</foaf:Person>
+</foaf:knows>
+<foaf:knows>
+<foaf:Person rdf:about="http://www.google.com/profiles/zhutchok">
+
+
+
+
+
+
+
+</foaf:Person>
+</foaf:knows>
+<foaf:knows>
+<foaf:Person rdf:about="http://www.google.com/profiles/KolchinMax">
+
+
+
+
+
+</foaf:Person>
+
+</foaf:knows>
+<foaf:knows>
+<foaf:Person rdf:about="https://me.yahoo.com/a/W.Bwa0g12_vC5jtRpcVlA_o7.6cH2IMBtiOBX4aza.RmC88P7J43zw--">
+
+
+
+
+</foaf:Person>
+</foaf:knows>
+<foaf:knows>
+<foaf:Person rdf:about="noid1">
+
+
+
+
+</foaf:Person>
+</foaf:knows>
+
+<foaf:knows>
+<foaf:Person rdf:about="http://www.google.com/profiles/cvetlana.mail">
+
+
+
+
+</foaf:Person>
+</foaf:knows>
+<foaf:knows>
+<foaf:Person rdf:about="http://www.google.com/profiles/vyahhi">
+
+
+
+
+
+
+
+
+
+
+</foaf:Person>
+</foaf:knows>
+<foaf:account>
+<foaf:OnlineAccount>
+<foaf:accountServiceHomepage rdf:resource="facebook.com"></foaf:accountServiceHomepage>
+<foaf:accountName>nnnnnk</foaf:accountName>
+</foaf:OnlineAccount>
+</foaf:account>
+<foaf:account>
+<foaf:OnlineAccount>
+<foaf:accountServiceHomepage rdf:resource="kenai.com"></foaf:accountServiceHomepage>
+<foaf:accountName>nnnnnk</foaf:accountName>
+
+</foaf:OnlineAccount>
+</foaf:account>
+<foaf:account>
+<foaf:OnlineAccount>
+<foaf:accountServiceHomepage rdf:resource="youtube.com"></foaf:accountServiceHomepage>
+<foaf:accountName>nnnnnkr</foaf:accountName>
+</foaf:OnlineAccount>
+</foaf:account>
+<foaf:account>
+<foaf:OnlineAccount>
+<foaf:accountServiceHomepage rdf:resource="picasaweb.google.com"></foaf:accountServiceHomepage>
+<foaf:accountName>nnnnnk</foaf:accountName>
+</foaf:OnlineAccount>
+</foaf:account>
+<foaf:account>
+
+<foaf:OnlineAccount>
+<foaf:accountServiceHomepage rdf:resource="twitter.com"></foaf:accountServiceHomepage>
+<foaf:accountName>nnnnnk</foaf:accountName>
+</foaf:OnlineAccount>
+</foaf:account>
+<foaf:jabberId>nnnnnk@gmail.com</foaf:jabberId>
+</foaf:Person>
+
+
+
+</rdf:RDF>
