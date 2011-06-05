@@ -1,0 +1,931 @@
+2011-05-29 17:17:26,657 - ResourceManager.getResource() parse exception
+2011-05-29 17:17:26,657 - org.apache.velocity.exception.ParseErrorException: Encountered ")" at line 92, column 36 of class.vm
+Was expecting one of:
+    "," ...
+    ")" ...
+    <WHITESPACE> ...
+    <DOT> ...
+    "(" ...
+    
+	at org.apache.velocity.Template.process(Template.java:137)
+	at org.apache.velocity.runtime.resource.ResourceManagerImpl.loadResource(ResourceManagerImpl.java:415)
+	at org.apache.velocity.runtime.resource.ResourceManagerImpl.getResource(ResourceManagerImpl.java:335)
+	at org.apache.velocity.runtime.RuntimeInstance.getTemplate(RuntimeInstance.java:1102)
+	at org.apache.velocity.runtime.RuntimeInstance.getTemplate(RuntimeInstance.java:1077)
+	at org.apache.velocity.app.VelocityEngine.getTemplate(VelocityEngine.java:528)
+	at org.ontoware.rdfreactor.generator.SourceCodeWriter.initTemplate(SourceCodeWriter.java:168)
+	at org.ontoware.rdfreactor.generator.SourceCodeWriter.write(SourceCodeWriter.java:98)
+	at org.ontoware.rdfreactor.generator.CodeGenerator.generate(CodeGenerator.java:207)
+	at org.ontoware.rdfreactor.generator.CodeGenerator.generate(CodeGenerator.java:110)
+	at org.ontoware.rdfreactor.generator.CodeGenerator.generate(CodeGenerator.java:64)
+	at com.mycompany.mavenproject2.App.main(App.java:19)
+
+2011-05-29 17:20:05,878 - SimpleLog4JLogSystem initialized using logfile 'velocity.log'
+2011-05-29 17:20:05,879 - *******************************************************************
+2011-05-29 17:20:05,880 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2011-05-29 17:20:05,880 - RuntimeInstance initializing.
+2011-05-29 17:20:05,880 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2011-05-29 17:20:05,880 - Trying to use logger class org.apache.velocity.runtime.log.SimpleLog4JLogSystem
+2011-05-29 17:20:05,880 - LogSystem has been deprecated. Please use a LogChute implementation.
+2011-05-29 17:20:05,882 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2011-05-29 17:20:05,884 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2011-05-29 17:20:05,885 - ClasspathResourceLoader : initialization complete.
+2011-05-29 17:20:05,897 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2011-05-29 17:20:05,897 - Default ResourceManager initialization complete.
+2011-05-29 17:20:05,898 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2011-05-29 17:20:05,900 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2011-05-29 17:20:05,901 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2011-05-29 17:20:05,902 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2011-05-29 17:20:05,903 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2011-05-29 17:20:05,936 - Created '20' parsers.
+2011-05-29 17:20:05,942 - Velocimacro : initialization starting.
+2011-05-29 17:20:05,943 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2011-05-29 17:20:05,943 - Velocimacro : Default library not found.
+2011-05-29 17:20:05,943 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2011-05-29 17:20:05,943 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2011-05-29 17:20:05,943 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2011-05-29 17:20:05,943 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2011-05-29 17:20:05,943 - Velocimacro : Velocimacro : initialization complete.
+2011-05-29 17:20:05,943 - RuntimeInstance successfully initialized.
+2011-05-29 17:20:05,956 - Velocimacro : added #mixedcase(  name ) : source = class.vm
+2011-05-29 17:20:05,956 - Velocimacro : added #lowercase(  name ) : source = class.vm
+2011-05-29 17:20:05,957 - Velocimacro : added #uppercase(  name ) : source = class.vm
+2011-05-29 17:20:05,960 - Velocimacro : added #comment(  indent name ) : source = class.vm
+2011-05-29 17:20:05,960 - Velocimacro : added #debug(  text ) : source = class.vm
+2011-05-29 17:20:05,970 - Parser Exception: class.vm
+2011-05-29 17:20:05,971 - org.apache.velocity.runtime.parser.ParseException: Encountered "JClass" at line 62, column 43.
+Was expecting one of:
+    "[" ...
+    "{" ...
+    "(" ...
+    <STRING_LITERAL> ...
+    "true" ...
+    "false" ...
+    <INTEGER_LITERAL> ...
+    <FLOATING_POINT_LITERAL> ...
+    <IDENTIFIER> ...
+    "{" ...
+    <LOGICAL_NOT> ...
+    
+	at org.apache.velocity.runtime.parser.Parser.generateParseException(Parser.java:3360)
+	at org.apache.velocity.runtime.parser.Parser.jj_consume_token(Parser.java:3237)
+	at org.apache.velocity.runtime.parser.Parser.PrimaryExpression(Parser.java:2424)
+	at org.apache.velocity.runtime.parser.Parser.UnaryExpression(Parser.java:2366)
+	at org.apache.velocity.runtime.parser.Parser.MultiplicativeExpression(Parser.java:2215)
+	at org.apache.velocity.runtime.parser.Parser.AdditiveExpression(Parser.java:2139)
+	at org.apache.velocity.runtime.parser.Parser.RelationalExpression(Parser.java:2007)
+	at org.apache.velocity.runtime.parser.Parser.EqualityExpression(Parser.java:1950)
+	at org.apache.velocity.runtime.parser.Parser.ConditionalAndExpression(Parser.java:1891)
+	at org.apache.velocity.runtime.parser.Parser.ConditionalOrExpression(Parser.java:1851)
+	at org.apache.velocity.runtime.parser.Parser.Expression(Parser.java:1798)
+	at org.apache.velocity.runtime.parser.Parser.SetDirective(Parser.java:1730)
+	at org.apache.velocity.runtime.parser.Parser.Statement(Parser.java:310)
+	at org.apache.velocity.runtime.parser.Parser.Directive(Parser.java:794)
+	at org.apache.velocity.runtime.parser.Parser.Statement(Parser.java:320)
+	at org.apache.velocity.runtime.parser.Parser.process(Parser.java:258)
+	at org.apache.velocity.runtime.parser.Parser.parse(Parser.java:105)
+	at org.apache.velocity.runtime.RuntimeInstance.parse(RuntimeInstance.java:1042)
+	at org.apache.velocity.runtime.RuntimeInstance.parse(RuntimeInstance.java:972)
+	at org.apache.velocity.Template.process(Template.java:120)
+	at org.apache.velocity.runtime.resource.ResourceManagerImpl.loadResource(ResourceManagerImpl.java:415)
+	at org.apache.velocity.runtime.resource.ResourceManagerImpl.getResource(ResourceManagerImpl.java:335)
+	at org.apache.velocity.runtime.RuntimeInstance.getTemplate(RuntimeInstance.java:1102)
+	at org.apache.velocity.runtime.RuntimeInstance.getTemplate(RuntimeInstance.java:1077)
+	at org.apache.velocity.app.VelocityEngine.getTemplate(VelocityEngine.java:528)
+	at org.ontoware.rdfreactor.generator.SourceCodeWriter.initTemplate(SourceCodeWriter.java:168)
+	at org.ontoware.rdfreactor.generator.SourceCodeWriter.write(SourceCodeWriter.java:98)
+	at org.ontoware.rdfreactor.generator.CodeGenerator.generate(CodeGenerator.java:207)
+	at org.ontoware.rdfreactor.generator.CodeGenerator.generate(CodeGenerator.java:110)
+	at org.ontoware.rdfreactor.generator.CodeGenerator.generate(CodeGenerator.java:64)
+	at com.mycompany.mavenproject2.App.main(App.java:19)
+
+2011-05-29 17:20:05,972 - ResourceManager.getResource() parse exception
+2011-05-29 17:20:05,972 - org.apache.velocity.exception.ParseErrorException: Encountered "JClass" at line 62, column 43 of class.vm
+Was expecting one of:
+    "[" ...
+    "{" ...
+    "(" ...
+    <STRING_LITERAL> ...
+    "true" ...
+    "false" ...
+    <INTEGER_LITERAL> ...
+    <FLOATING_POINT_LITERAL> ...
+    <IDENTIFIER> ...
+    "{" ...
+    <LOGICAL_NOT> ...
+    
+	at org.apache.velocity.Template.process(Template.java:137)
+	at org.apache.velocity.runtime.resource.ResourceManagerImpl.loadResource(ResourceManagerImpl.java:415)
+	at org.apache.velocity.runtime.resource.ResourceManagerImpl.getResource(ResourceManagerImpl.java:335)
+	at org.apache.velocity.runtime.RuntimeInstance.getTemplate(RuntimeInstance.java:1102)
+	at org.apache.velocity.runtime.RuntimeInstance.getTemplate(RuntimeInstance.java:1077)
+	at org.apache.velocity.app.VelocityEngine.getTemplate(VelocityEngine.java:528)
+	at org.ontoware.rdfreactor.generator.SourceCodeWriter.initTemplate(SourceCodeWriter.java:168)
+	at org.ontoware.rdfreactor.generator.SourceCodeWriter.write(SourceCodeWriter.java:98)
+	at org.ontoware.rdfreactor.generator.CodeGenerator.generate(CodeGenerator.java:207)
+	at org.ontoware.rdfreactor.generator.CodeGenerator.generate(CodeGenerator.java:110)
+	at org.ontoware.rdfreactor.generator.CodeGenerator.generate(CodeGenerator.java:64)
+	at com.mycompany.mavenproject2.App.main(App.java:19)
+
+2011-05-29 17:23:44,700 - SimpleLog4JLogSystem initialized using logfile 'velocity.log'
+2011-05-29 17:23:44,701 - *******************************************************************
+2011-05-29 17:23:44,701 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2011-05-29 17:23:44,701 - RuntimeInstance initializing.
+2011-05-29 17:23:44,701 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2011-05-29 17:23:44,701 - Trying to use logger class org.apache.velocity.runtime.log.SimpleLog4JLogSystem
+2011-05-29 17:23:44,701 - LogSystem has been deprecated. Please use a LogChute implementation.
+2011-05-29 17:23:44,704 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2011-05-29 17:23:44,707 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2011-05-29 17:23:44,709 - ClasspathResourceLoader : initialization complete.
+2011-05-29 17:23:44,727 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2011-05-29 17:23:44,727 - Default ResourceManager initialization complete.
+2011-05-29 17:23:44,729 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2011-05-29 17:23:44,731 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2011-05-29 17:23:44,733 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2011-05-29 17:23:44,735 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2011-05-29 17:23:44,736 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2011-05-29 17:23:44,782 - Created '20' parsers.
+2011-05-29 17:23:44,791 - Velocimacro : initialization starting.
+2011-05-29 17:23:44,792 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2011-05-29 17:23:44,792 - Velocimacro : Default library not found.
+2011-05-29 17:23:44,792 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2011-05-29 17:23:44,792 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2011-05-29 17:23:44,792 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2011-05-29 17:23:44,792 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2011-05-29 17:23:44,793 - Velocimacro : Velocimacro : initialization complete.
+2011-05-29 17:23:44,793 - RuntimeInstance successfully initialized.
+2011-05-29 17:23:44,810 - Velocimacro : added #mixedcase(  name ) : source = class.vm
+2011-05-29 17:23:44,811 - Velocimacro : added #lowercase(  name ) : source = class.vm
+2011-05-29 17:23:44,811 - Velocimacro : added #uppercase(  name ) : source = class.vm
+2011-05-29 17:23:44,815 - Velocimacro : added #comment(  indent name ) : source = class.vm
+2011-05-29 17:23:44,816 - Velocimacro : added #debug(  text ) : source = class.vm
+2011-05-29 17:23:44,847 - ResourceManager : found class.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2011-05-29 17:23:44,881 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 17:23:44,899 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,900 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,900 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,900 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,901 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,901 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,901 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,902 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,902 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,902 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,903 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,903 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,903 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,904 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,904 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,907 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,907 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,908 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,908 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,908 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,910 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:23:44,911 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,912 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:23:44,912 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,912 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:23:44,912 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,912 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:23:44,912 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,917 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 17:23:44,918 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,919 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:23:44,919 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,919 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:23:44,919 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,919 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:23:44,919 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,920 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:23:44,920 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,922 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 17:23:44,923 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:23:44,923 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,923 - Null reference [template 'class.vm', line 70, column 29] : ${classname} cannot be resolved.
+2011-05-29 17:23:44,923 - Null reference [template 'class.vm', line 71, column 84] : ${classname} cannot be resolved.
+2011-05-29 17:23:44,923 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:23:44,924 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,924 - Null reference [template 'class.vm', line 70, column 29] : ${classname} cannot be resolved.
+2011-05-29 17:23:44,924 - Null reference [template 'class.vm', line 71, column 84] : ${classname} cannot be resolved.
+2011-05-29 17:23:44,924 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:23:44,924 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,924 - Null reference [template 'class.vm', line 70, column 29] : ${classname} cannot be resolved.
+2011-05-29 17:23:44,924 - Null reference [template 'class.vm', line 71, column 84] : ${classname} cannot be resolved.
+2011-05-29 17:23:44,924 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:23:44,925 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,925 - Null reference [template 'class.vm', line 70, column 29] : ${classname} cannot be resolved.
+2011-05-29 17:23:44,925 - Null reference [template 'class.vm', line 71, column 84] : ${classname} cannot be resolved.
+2011-05-29 17:23:44,927 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 17:23:44,929 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,929 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,929 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,930 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:23:44,930 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,930 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:23:44,930 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,930 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:23:44,931 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,931 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:23:44,931 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,933 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 17:23:44,935 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,935 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:23:44,935 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,935 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:23:44,935 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,936 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:23:44,936 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,936 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:23:44,936 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,938 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 17:23:44,940 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,940 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,942 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 17:23:44,943 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:23:44,943 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,943 - Null reference [template 'class.vm', line 70, column 29] : ${classname} cannot be resolved.
+2011-05-29 17:23:44,943 - Null reference [template 'class.vm', line 71, column 84] : ${classname} cannot be resolved.
+2011-05-29 17:23:44,943 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:23:44,944 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,944 - Null reference [template 'class.vm', line 70, column 29] : ${classname} cannot be resolved.
+2011-05-29 17:23:44,944 - Null reference [template 'class.vm', line 71, column 84] : ${classname} cannot be resolved.
+2011-05-29 17:23:44,944 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:23:44,944 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,944 - Null reference [template 'class.vm', line 70, column 29] : ${classname} cannot be resolved.
+2011-05-29 17:23:44,944 - Null reference [template 'class.vm', line 71, column 84] : ${classname} cannot be resolved.
+2011-05-29 17:23:44,944 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:23:44,945 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,945 - Null reference [template 'class.vm', line 70, column 29] : ${classname} cannot be resolved.
+2011-05-29 17:23:44,945 - Null reference [template 'class.vm', line 71, column 84] : ${classname} cannot be resolved.
+2011-05-29 17:23:44,947 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 17:23:44,948 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,948 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,949 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:23:44,949 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,949 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:23:44,949 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,949 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:23:44,949 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,950 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:23:44,950 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,952 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 17:23:44,953 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 17:23:44,955 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 17:23:44,956 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 17:23:44,957 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:23:44,957 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,957 - Null reference [template 'class.vm', line 70, column 29] : ${classname} cannot be resolved.
+2011-05-29 17:23:44,957 - Null reference [template 'class.vm', line 71, column 84] : ${classname} cannot be resolved.
+2011-05-29 17:23:44,958 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:23:44,958 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,958 - Null reference [template 'class.vm', line 70, column 29] : ${classname} cannot be resolved.
+2011-05-29 17:23:44,958 - Null reference [template 'class.vm', line 71, column 84] : ${classname} cannot be resolved.
+2011-05-29 17:23:44,958 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:23:44,958 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,958 - Null reference [template 'class.vm', line 70, column 29] : ${classname} cannot be resolved.
+2011-05-29 17:23:44,959 - Null reference [template 'class.vm', line 71, column 84] : ${classname} cannot be resolved.
+2011-05-29 17:23:44,959 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:23:44,959 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,959 - Null reference [template 'class.vm', line 70, column 29] : ${classname} cannot be resolved.
+2011-05-29 17:23:44,959 - Null reference [template 'class.vm', line 71, column 84] : ${classname} cannot be resolved.
+2011-05-29 17:23:44,961 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 17:23:44,963 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,963 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,963 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,964 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,964 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,964 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,964 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,964 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,965 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,965 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,965 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,965 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,965 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,966 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,966 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,966 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,967 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,967 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:23:44,967 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,967 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:23:44,967 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,967 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:23:44,968 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,968 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:23:44,968 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,970 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 17:23:44,972 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 17:23:44,972 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:23:44,972 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,973 - Null reference [template 'class.vm', line 70, column 29] : ${classname} cannot be resolved.
+2011-05-29 17:23:44,973 - Null reference [template 'class.vm', line 71, column 84] : ${classname} cannot be resolved.
+2011-05-29 17:23:44,973 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:23:44,973 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,973 - Null reference [template 'class.vm', line 70, column 29] : ${classname} cannot be resolved.
+2011-05-29 17:23:44,973 - Null reference [template 'class.vm', line 71, column 84] : ${classname} cannot be resolved.
+2011-05-29 17:23:44,973 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:23:44,973 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,973 - Null reference [template 'class.vm', line 70, column 29] : ${classname} cannot be resolved.
+2011-05-29 17:23:44,973 - Null reference [template 'class.vm', line 71, column 84] : ${classname} cannot be resolved.
+2011-05-29 17:23:44,973 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:23:44,973 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,974 - Null reference [template 'class.vm', line 70, column 29] : ${classname} cannot be resolved.
+2011-05-29 17:23:44,974 - Null reference [template 'class.vm', line 71, column 84] : ${classname} cannot be resolved.
+2011-05-29 17:23:44,975 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 17:23:44,977 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,977 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:23:44,978 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,978 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:23:44,978 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,978 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:23:44,978 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,979 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:23:44,979 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,981 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 17:23:44,984 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,984 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,985 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,985 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,985 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,985 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,986 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,986 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,986 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,987 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,987 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,987 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,988 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,988 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,988 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,989 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,989 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,989 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,990 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,990 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,990 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,991 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:23:44,991 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,227 - SimpleLog4JLogSystem initialized using logfile 'velocity.log'
+2011-05-29 17:30:36,228 - *******************************************************************
+2011-05-29 17:30:36,228 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2011-05-29 17:30:36,228 - RuntimeInstance initializing.
+2011-05-29 17:30:36,229 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2011-05-29 17:30:36,229 - Trying to use logger class org.apache.velocity.runtime.log.SimpleLog4JLogSystem
+2011-05-29 17:30:36,229 - LogSystem has been deprecated. Please use a LogChute implementation.
+2011-05-29 17:30:36,232 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2011-05-29 17:30:36,235 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2011-05-29 17:30:36,236 - ClasspathResourceLoader : initialization complete.
+2011-05-29 17:30:36,255 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2011-05-29 17:30:36,255 - Default ResourceManager initialization complete.
+2011-05-29 17:30:36,258 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2011-05-29 17:30:36,260 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2011-05-29 17:30:36,261 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2011-05-29 17:30:36,263 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2011-05-29 17:30:36,265 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2011-05-29 17:30:36,314 - Created '20' parsers.
+2011-05-29 17:30:36,323 - Velocimacro : initialization starting.
+2011-05-29 17:30:36,323 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2011-05-29 17:30:36,324 - Velocimacro : Default library not found.
+2011-05-29 17:30:36,324 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2011-05-29 17:30:36,324 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2011-05-29 17:30:36,324 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2011-05-29 17:30:36,324 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2011-05-29 17:30:36,324 - Velocimacro : Velocimacro : initialization complete.
+2011-05-29 17:30:36,324 - RuntimeInstance successfully initialized.
+2011-05-29 17:30:36,342 - Velocimacro : added #mixedcase(  name ) : source = class.vm
+2011-05-29 17:30:36,342 - Velocimacro : added #lowercase(  name ) : source = class.vm
+2011-05-29 17:30:36,343 - Velocimacro : added #uppercase(  name ) : source = class.vm
+2011-05-29 17:30:36,347 - Velocimacro : added #comment(  indent name ) : source = class.vm
+2011-05-29 17:30:36,348 - Velocimacro : added #debug(  text ) : source = class.vm
+2011-05-29 17:30:36,381 - ResourceManager : found class.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2011-05-29 17:30:36,415 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 17:30:36,433 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,434 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,434 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,435 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,435 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,435 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,436 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,436 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,436 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,437 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,437 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,437 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,438 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,438 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,438 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,441 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,442 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,442 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,443 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,443 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,445 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:30:36,446 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,446 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:30:36,446 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,446 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:30:36,447 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,447 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:30:36,447 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,449 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 17:30:36,449 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 17:30:36,449 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 17:30:36,449 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 17:30:36,451 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 17:30:36,452 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,453 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:30:36,453 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,453 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:30:36,453 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,453 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:30:36,453 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,454 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:30:36,454 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,454 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 17:30:36,455 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 17:30:36,455 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 17:30:36,455 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 17:30:36,456 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 17:30:36,457 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:30:36,458 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,458 - Null reference [template 'class.vm', line 70, column 29] : ${classname} cannot be resolved.
+2011-05-29 17:30:36,458 - Null reference [template 'class.vm', line 71, column 84] : ${classname} cannot be resolved.
+2011-05-29 17:30:36,458 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:30:36,458 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,458 - Null reference [template 'class.vm', line 70, column 29] : ${classname} cannot be resolved.
+2011-05-29 17:30:36,459 - Null reference [template 'class.vm', line 71, column 84] : ${classname} cannot be resolved.
+2011-05-29 17:30:36,459 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:30:36,459 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,459 - Null reference [template 'class.vm', line 70, column 29] : ${classname} cannot be resolved.
+2011-05-29 17:30:36,459 - Null reference [template 'class.vm', line 71, column 84] : ${classname} cannot be resolved.
+2011-05-29 17:30:36,459 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:30:36,459 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,459 - Null reference [template 'class.vm', line 70, column 29] : ${classname} cannot be resolved.
+2011-05-29 17:30:36,460 - Null reference [template 'class.vm', line 71, column 84] : ${classname} cannot be resolved.
+2011-05-29 17:30:36,460 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 17:30:36,460 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 17:30:36,460 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 17:30:36,461 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 17:30:36,462 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 17:30:36,464 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,465 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,465 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,465 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:30:36,465 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,466 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:30:36,466 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,466 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:30:36,466 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,466 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:30:36,466 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,467 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 17:30:36,467 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 17:30:36,468 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 17:30:36,468 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 17:30:36,469 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 17:30:36,470 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,470 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:30:36,470 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,471 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:30:36,471 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,471 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:30:36,471 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,471 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:30:36,471 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,472 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 17:30:36,472 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 17:30:36,472 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 17:30:36,473 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 17:30:36,474 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 17:30:36,475 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,476 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,477 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 17:30:36,478 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:30:36,478 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,478 - Null reference [template 'class.vm', line 70, column 29] : ${classname} cannot be resolved.
+2011-05-29 17:30:36,479 - Null reference [template 'class.vm', line 71, column 84] : ${classname} cannot be resolved.
+2011-05-29 17:30:36,479 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:30:36,479 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,479 - Null reference [template 'class.vm', line 70, column 29] : ${classname} cannot be resolved.
+2011-05-29 17:30:36,479 - Null reference [template 'class.vm', line 71, column 84] : ${classname} cannot be resolved.
+2011-05-29 17:30:36,479 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:30:36,479 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,480 - Null reference [template 'class.vm', line 70, column 29] : ${classname} cannot be resolved.
+2011-05-29 17:30:36,480 - Null reference [template 'class.vm', line 71, column 84] : ${classname} cannot be resolved.
+2011-05-29 17:30:36,480 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:30:36,480 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,480 - Null reference [template 'class.vm', line 70, column 29] : ${classname} cannot be resolved.
+2011-05-29 17:30:36,480 - Null reference [template 'class.vm', line 71, column 84] : ${classname} cannot be resolved.
+2011-05-29 17:30:36,481 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 17:30:36,481 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 17:30:36,481 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 17:30:36,481 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 17:30:36,482 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 17:30:36,484 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,484 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,484 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:30:36,484 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,485 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:30:36,485 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,485 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:30:36,485 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,485 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:30:36,485 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,486 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 17:30:36,486 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 17:30:36,486 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 17:30:36,486 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 17:30:36,487 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 17:30:36,488 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 17:30:36,489 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 17:30:36,491 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 17:30:36,491 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:30:36,492 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,492 - Null reference [template 'class.vm', line 70, column 29] : ${classname} cannot be resolved.
+2011-05-29 17:30:36,492 - Null reference [template 'class.vm', line 71, column 84] : ${classname} cannot be resolved.
+2011-05-29 17:30:36,492 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:30:36,492 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,492 - Null reference [template 'class.vm', line 70, column 29] : ${classname} cannot be resolved.
+2011-05-29 17:30:36,493 - Null reference [template 'class.vm', line 71, column 84] : ${classname} cannot be resolved.
+2011-05-29 17:30:36,493 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:30:36,493 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,493 - Null reference [template 'class.vm', line 70, column 29] : ${classname} cannot be resolved.
+2011-05-29 17:30:36,493 - Null reference [template 'class.vm', line 71, column 84] : ${classname} cannot be resolved.
+2011-05-29 17:30:36,493 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:30:36,493 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,493 - Null reference [template 'class.vm', line 70, column 29] : ${classname} cannot be resolved.
+2011-05-29 17:30:36,493 - Null reference [template 'class.vm', line 71, column 84] : ${classname} cannot be resolved.
+2011-05-29 17:30:36,493 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 17:30:36,494 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 17:30:36,494 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 17:30:36,494 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 17:30:36,495 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 17:30:36,497 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,497 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,497 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,497 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,498 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,498 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,498 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,498 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,498 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,499 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,499 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,499 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,499 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,500 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,500 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,500 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,500 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,501 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:30:36,501 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,501 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:30:36,501 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,501 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:30:36,501 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,502 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:30:36,502 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,503 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 17:30:36,503 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 17:30:36,503 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 17:30:36,503 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 17:30:36,504 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 17:30:36,505 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 17:30:36,506 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:30:36,506 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,506 - Null reference [template 'class.vm', line 70, column 29] : ${classname} cannot be resolved.
+2011-05-29 17:30:36,506 - Null reference [template 'class.vm', line 71, column 84] : ${classname} cannot be resolved.
+2011-05-29 17:30:36,507 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:30:36,507 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,507 - Null reference [template 'class.vm', line 70, column 29] : ${classname} cannot be resolved.
+2011-05-29 17:30:36,507 - Null reference [template 'class.vm', line 71, column 84] : ${classname} cannot be resolved.
+2011-05-29 17:30:36,507 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:30:36,507 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,507 - Null reference [template 'class.vm', line 70, column 29] : ${classname} cannot be resolved.
+2011-05-29 17:30:36,507 - Null reference [template 'class.vm', line 71, column 84] : ${classname} cannot be resolved.
+2011-05-29 17:30:36,507 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:30:36,507 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,507 - Null reference [template 'class.vm', line 70, column 29] : ${classname} cannot be resolved.
+2011-05-29 17:30:36,507 - Null reference [template 'class.vm', line 71, column 84] : ${classname} cannot be resolved.
+2011-05-29 17:30:36,508 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 17:30:36,508 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 17:30:36,508 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 17:30:36,508 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 17:30:36,509 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 17:30:36,511 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,512 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:30:36,512 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,512 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:30:36,512 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,513 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:30:36,513 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,513 - RHS of #set statement is null. Context will not be modified. class.vm [line 61, column 1]
+2011-05-29 17:30:36,513 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,514 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 17:30:36,514 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 17:30:36,514 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 17:30:36,514 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 17:30:36,516 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 17:30:36,519 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,519 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,520 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,520 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,520 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,521 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,521 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,521 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,522 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,522 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,522 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,523 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,523 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,523 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,524 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,524 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,524 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,524 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,525 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,525 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,525 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,526 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 17:30:36,526 - Null reference [template 'class.vm', line 68, column 27] : $type cannot be resolved.
+2011-05-29 18:20:01,396 - SimpleLog4JLogSystem initialized using logfile 'velocity.log'
+2011-05-29 18:20:01,396 - *******************************************************************
+2011-05-29 18:20:01,396 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2011-05-29 18:20:01,396 - RuntimeInstance initializing.
+2011-05-29 18:20:01,396 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2011-05-29 18:20:01,396 - Trying to use logger class org.apache.velocity.runtime.log.SimpleLog4JLogSystem
+2011-05-29 18:20:01,396 - LogSystem has been deprecated. Please use a LogChute implementation.
+2011-05-29 18:20:01,399 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2011-05-29 18:20:01,401 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2011-05-29 18:20:01,402 - ClasspathResourceLoader : initialization complete.
+2011-05-29 18:20:01,415 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2011-05-29 18:20:01,415 - Default ResourceManager initialization complete.
+2011-05-29 18:20:01,416 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2011-05-29 18:20:01,418 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2011-05-29 18:20:01,419 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2011-05-29 18:20:01,420 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2011-05-29 18:20:01,421 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2011-05-29 18:20:01,453 - Created '20' parsers.
+2011-05-29 18:20:01,460 - Velocimacro : initialization starting.
+2011-05-29 18:20:01,460 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2011-05-29 18:20:01,461 - Velocimacro : Default library not found.
+2011-05-29 18:20:01,461 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2011-05-29 18:20:01,461 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2011-05-29 18:20:01,461 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2011-05-29 18:20:01,461 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2011-05-29 18:20:01,461 - Velocimacro : Velocimacro : initialization complete.
+2011-05-29 18:20:01,461 - RuntimeInstance successfully initialized.
+2011-05-29 18:20:01,474 - Velocimacro : added #mixedcase(  name ) : source = class.vm
+2011-05-29 18:20:01,474 - Velocimacro : added #lowercase(  name ) : source = class.vm
+2011-05-29 18:20:01,474 - Velocimacro : added #uppercase(  name ) : source = class.vm
+2011-05-29 18:20:01,477 - Velocimacro : added #comment(  indent name ) : source = class.vm
+2011-05-29 18:20:01,478 - Velocimacro : added #debug(  text ) : source = class.vm
+2011-05-29 18:20:01,500 - ResourceManager : found class.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2011-05-29 18:20:01,524 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 18:20:01,544 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:20:01,545 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:20:01,545 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:20:01,545 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:20:01,547 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:20:01,547 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:20:01,547 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:20:01,547 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:20:01,548 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 18:20:01,549 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:20:01,550 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:20:01,550 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:20:01,550 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:20:01,551 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:20:01,551 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:20:01,551 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:20:01,551 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:20:01,552 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 18:20:01,553 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:20:01,553 - Null reference [template 'class.vm', line 69, column 31] : ${classname} cannot be resolved.
+2011-05-29 18:20:01,553 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:20:01,553 - Null reference [template 'class.vm', line 69, column 31] : ${classname} cannot be resolved.
+2011-05-29 18:20:01,554 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:20:01,554 - Null reference [template 'class.vm', line 69, column 31] : ${classname} cannot be resolved.
+2011-05-29 18:20:01,554 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:20:01,554 - Null reference [template 'class.vm', line 69, column 31] : ${classname} cannot be resolved.
+2011-05-29 18:20:01,554 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:20:01,555 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:20:01,555 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:20:01,555 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:20:01,556 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 18:20:01,558 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:20:01,559 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:20:01,559 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:20:01,559 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:20:01,560 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:20:01,560 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:20:01,560 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:20:01,560 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:20:01,561 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 18:20:01,563 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:20:01,563 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:20:01,563 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:20:01,563 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:20:01,564 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:20:01,564 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:20:01,564 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:20:01,564 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:20:01,565 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 18:20:01,568 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 18:20:01,568 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:20:01,569 - Null reference [template 'class.vm', line 69, column 31] : ${classname} cannot be resolved.
+2011-05-29 18:20:01,569 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:20:01,569 - Null reference [template 'class.vm', line 69, column 31] : ${classname} cannot be resolved.
+2011-05-29 18:20:01,569 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:20:01,569 - Null reference [template 'class.vm', line 69, column 31] : ${classname} cannot be resolved.
+2011-05-29 18:20:01,569 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:20:01,570 - Null reference [template 'class.vm', line 69, column 31] : ${classname} cannot be resolved.
+2011-05-29 18:20:01,570 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:20:01,570 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:20:01,570 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:20:01,571 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:20:01,572 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 18:20:01,573 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:20:01,574 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:20:01,574 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:20:01,574 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:20:01,575 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:20:01,575 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:20:01,575 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:20:01,575 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:20:01,576 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 18:20:01,577 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 18:20:01,578 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 18:20:01,579 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 18:20:01,580 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:20:01,580 - Null reference [template 'class.vm', line 69, column 31] : ${classname} cannot be resolved.
+2011-05-29 18:20:01,580 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:20:01,580 - Null reference [template 'class.vm', line 69, column 31] : ${classname} cannot be resolved.
+2011-05-29 18:20:01,581 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:20:01,581 - Null reference [template 'class.vm', line 69, column 31] : ${classname} cannot be resolved.
+2011-05-29 18:20:01,581 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:20:01,581 - Null reference [template 'class.vm', line 69, column 31] : ${classname} cannot be resolved.
+2011-05-29 18:20:01,581 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:20:01,582 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:20:01,582 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:20:01,582 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:20:01,583 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 18:20:01,588 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:20:01,588 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:20:01,589 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:20:01,589 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:20:01,590 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:20:01,590 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:20:01,590 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:20:01,590 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:20:01,591 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 18:20:01,592 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 18:20:01,593 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:20:01,593 - Null reference [template 'class.vm', line 69, column 31] : ${classname} cannot be resolved.
+2011-05-29 18:20:01,594 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:20:01,594 - Null reference [template 'class.vm', line 69, column 31] : ${classname} cannot be resolved.
+2011-05-29 18:20:01,594 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:20:01,594 - Null reference [template 'class.vm', line 69, column 31] : ${classname} cannot be resolved.
+2011-05-29 18:20:01,594 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:20:01,594 - Null reference [template 'class.vm', line 69, column 31] : ${classname} cannot be resolved.
+2011-05-29 18:20:01,595 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:20:01,595 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:20:01,595 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:20:01,595 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:20:01,597 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 18:20:01,598 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:20:01,599 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:20:01,599 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:20:01,599 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:20:01,599 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:20:01,600 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:20:01,600 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:20:01,600 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:20:01,601 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 18:23:10,091 - SimpleLog4JLogSystem initialized using logfile 'velocity.log'
+2011-05-29 18:23:10,092 - *******************************************************************
+2011-05-29 18:23:10,092 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2011-05-29 18:23:10,092 - RuntimeInstance initializing.
+2011-05-29 18:23:10,092 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2011-05-29 18:23:10,092 - Trying to use logger class org.apache.velocity.runtime.log.SimpleLog4JLogSystem
+2011-05-29 18:23:10,092 - LogSystem has been deprecated. Please use a LogChute implementation.
+2011-05-29 18:23:10,095 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2011-05-29 18:23:10,097 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2011-05-29 18:23:10,098 - ClasspathResourceLoader : initialization complete.
+2011-05-29 18:23:10,110 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2011-05-29 18:23:10,110 - Default ResourceManager initialization complete.
+2011-05-29 18:23:10,111 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2011-05-29 18:23:10,113 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2011-05-29 18:23:10,114 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2011-05-29 18:23:10,115 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2011-05-29 18:23:10,116 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2011-05-29 18:23:10,146 - Created '20' parsers.
+2011-05-29 18:23:10,153 - Velocimacro : initialization starting.
+2011-05-29 18:23:10,153 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2011-05-29 18:23:10,154 - Velocimacro : Default library not found.
+2011-05-29 18:23:10,154 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2011-05-29 18:23:10,154 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2011-05-29 18:23:10,154 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2011-05-29 18:23:10,154 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2011-05-29 18:23:10,154 - Velocimacro : Velocimacro : initialization complete.
+2011-05-29 18:23:10,154 - RuntimeInstance successfully initialized.
+2011-05-29 18:23:10,166 - Velocimacro : added #mixedcase(  name ) : source = class.vm
+2011-05-29 18:23:10,167 - Velocimacro : added #lowercase(  name ) : source = class.vm
+2011-05-29 18:23:10,167 - Velocimacro : added #uppercase(  name ) : source = class.vm
+2011-05-29 18:23:10,170 - Velocimacro : added #comment(  indent name ) : source = class.vm
+2011-05-29 18:23:10,170 - Velocimacro : added #debug(  text ) : source = class.vm
+2011-05-29 18:23:10,197 - ResourceManager : found class.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2011-05-29 18:23:10,224 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 18:23:10,244 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:23:10,245 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:23:10,245 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:23:10,246 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:23:10,247 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:23:10,248 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:23:10,248 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:23:10,248 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:23:10,250 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 18:23:10,251 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:23:10,251 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:23:10,252 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:23:10,252 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:23:10,252 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:23:10,252 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:23:10,253 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:23:10,253 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:23:10,254 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 18:23:10,254 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:23:10,255 - Null reference [template 'class.vm', line 69, column 35] : ${classname} cannot be resolved.
+2011-05-29 18:23:10,255 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:23:10,255 - Null reference [template 'class.vm', line 69, column 35] : ${classname} cannot be resolved.
+2011-05-29 18:23:10,255 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:23:10,256 - Null reference [template 'class.vm', line 69, column 35] : ${classname} cannot be resolved.
+2011-05-29 18:23:10,256 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:23:10,256 - Null reference [template 'class.vm', line 69, column 35] : ${classname} cannot be resolved.
+2011-05-29 18:23:10,256 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:23:10,256 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:23:10,256 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:23:10,257 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:23:10,257 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 18:23:10,260 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:23:10,260 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:23:10,260 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:23:10,260 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:23:10,261 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:23:10,261 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:23:10,261 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:23:10,261 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:23:10,262 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 18:23:10,263 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:23:10,264 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:23:10,264 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:23:10,264 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:23:10,264 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:23:10,264 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:23:10,265 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:23:10,265 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:23:10,266 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 18:23:10,268 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 18:23:10,269 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:23:10,269 - Null reference [template 'class.vm', line 69, column 35] : ${classname} cannot be resolved.
+2011-05-29 18:23:10,269 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:23:10,270 - Null reference [template 'class.vm', line 69, column 35] : ${classname} cannot be resolved.
+2011-05-29 18:23:10,270 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:23:10,270 - Null reference [template 'class.vm', line 69, column 35] : ${classname} cannot be resolved.
+2011-05-29 18:23:10,270 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:23:10,270 - Null reference [template 'class.vm', line 69, column 35] : ${classname} cannot be resolved.
+2011-05-29 18:23:10,271 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:23:10,271 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:23:10,271 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:23:10,271 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:23:10,273 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 18:23:10,275 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:23:10,275 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:23:10,275 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:23:10,275 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:23:10,276 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:23:10,276 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:23:10,277 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:23:10,277 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:23:10,278 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 18:23:10,280 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 18:23:10,281 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 18:23:10,282 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 18:23:10,283 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:23:10,284 - Null reference [template 'class.vm', line 69, column 35] : ${classname} cannot be resolved.
+2011-05-29 18:23:10,284 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:23:10,284 - Null reference [template 'class.vm', line 69, column 35] : ${classname} cannot be resolved.
+2011-05-29 18:23:10,284 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:23:10,285 - Null reference [template 'class.vm', line 69, column 35] : ${classname} cannot be resolved.
+2011-05-29 18:23:10,285 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:23:10,285 - Null reference [template 'class.vm', line 69, column 35] : ${classname} cannot be resolved.
+2011-05-29 18:23:10,285 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:23:10,286 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:23:10,286 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:23:10,286 - RHS of #set statement is null. Context will not be modified. class.vm [line 91, column 1]
+2011-05-29 18:23:10,287 - Left side ($name.getComment().lenght) of '>' operation has null value. Operation not possible. class.vm [line 1, column 32]
+2011-05-29 18:23:10,293 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]
+2011-05-29 18:23:10,294 - RHS of #set statement is null. Context will not be modified. class.vm [line 64, column 1]

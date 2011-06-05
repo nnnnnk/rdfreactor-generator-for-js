@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/1765/trunk/org.semweb4j.rdfreactor.generator/src/main/resources
+END
+get.vm
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/1765/trunk/org.semweb4j.rdfreactor.generator/src/main/resources/get.vm
+END
+template-documentation.txt
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/1046/trunk/org.semweb4j.rdfreactor.generator/src/main/resources/template-documentation.txt
+END
+class.vm
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/1765/trunk/org.semweb4j.rdfreactor.generator/src/main/resources/class.vm
+END
+removeall.vm
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/1535/trunk/org.semweb4j.rdfreactor.generator/src/main/resources/removeall.vm
+END
+vocabulary.vm
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/57/trunk/org.semweb4j.rdfreactor.generator/src/main/resources/vocabulary.vm
+END
+add.vm
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/1046/trunk/org.semweb4j.rdfreactor.generator/src/main/resources/add.vm
+END
+dynamicclass.vm
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/1032/trunk/org.semweb4j.rdfreactor.generator/src/main/resources/dynamicclass.vm
+END
+set.vm
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/1046/trunk/org.semweb4j.rdfreactor.generator/src/main/resources/set.vm
+END
+staticclass.vm
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/1046/trunk/org.semweb4j.rdfreactor.generator/src/main/resources/staticclass.vm
+END
+remove.vm
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/1046/trunk/org.semweb4j.rdfreactor.generator/src/main/resources/remove.vm
+END

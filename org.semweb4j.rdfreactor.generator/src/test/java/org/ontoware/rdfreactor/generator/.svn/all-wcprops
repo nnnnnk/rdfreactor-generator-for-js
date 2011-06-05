@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/1535/trunk/org.semweb4j.rdfreactor.generator/src/test/java/org/ontoware/rdfreactor/generator
+END
+GenerateFromSchemas.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/1316/trunk/org.semweb4j.rdfreactor.generator/src/test/java/org/ontoware/rdfreactor/generator/GenerateFromSchemas.java
+END
+TestReportedBugs.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/1535/trunk/org.semweb4j.rdfreactor.generator/src/test/java/org/ontoware/rdfreactor/generator/TestReportedBugs.java
+END
+ModelGeneratorTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/!svn/ver/1046/trunk/org.semweb4j.rdfreactor.generator/src/test/java/org/ontoware/rdfreactor/generator/ModelGeneratorTest.java
+END
+SourceCodeWriterTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/!svn/ver/1046/trunk/org.semweb4j.rdfreactor.generator/src/test/java/org/ontoware/rdfreactor/generator/SourceCodeWriterTest.java
+END
+TestJModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/1046/trunk/org.semweb4j.rdfreactor.generator/src/test/java/org/ontoware/rdfreactor/generator/TestJModel.java
+END
+TestTemplateTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/1535/trunk/org.semweb4j.rdfreactor.generator/src/test/java/org/ontoware/rdfreactor/generator/TestTemplateTest.java
+END
+TemplateTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/!svn/ver/1046/trunk/org.semweb4j.rdfreactor.generator/src/test/java/org/ontoware/rdfreactor/generator/TemplateTest.java
+END
+MicrobridgeTestGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/!svn/ver/1046/trunk/org.semweb4j.rdfreactor.generator/src/test/java/org/ontoware/rdfreactor/generator/MicrobridgeTestGenerator.java
+END

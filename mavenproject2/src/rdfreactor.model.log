@@ -1,0 +1,168 @@
+
+JModel
+  JPackage foaf
+    JClass Thing -> http://www.w3.org/2000/01/rdf-schema#Class
+      extends: Object, 
+      comment: This class acts as a catch-all for all properties, for which no domain has specified.
+      DNAchecksum (-1/-1)  -> http://xmlns.com/foaf/0.1/dnaChecksum, types: 'String',. Inverse: DNAchecksum.
+      Depiction (-1/-1)  -> http://xmlns.com/foaf/0.1/depiction, types: 'Image',. Inverse: Depiction.
+      Description (-1/-1)  -> http://purl.org/dc/elements/1.1/description, types: 'Thing',. Inverse: Description.
+      DisjointWith (-1/-1)  -> http://www.w3.org/2002/07/owl#disjointWith, types: 'Thing',. Inverse: DisjointWith.
+      EquivalentClass (-1/-1)  -> http://www.w3.org/2002/07/owl#equivalentClass, types: 'Thing',. Inverse: EquivalentClass.
+      EquivalentProperty (-1/-1)  -> http://www.w3.org/2002/07/owl#equivalentProperty, types: 'Thing',. Inverse: EquivalentProperty.
+      FoafGivenname (-1/-1)  -> http://xmlns.com/foaf/0.1/givenname, types: 'Thing',. Inverse: FoafGivenname.
+      FoafTitle (-1/-1)  -> http://xmlns.com/foaf/0.1/title, types: 'Thing',. Inverse: FoafTitle.
+      Fundedby (-1/-1)  -> http://xmlns.com/foaf/0.1/fundedBy, types: 'org.ontoware.rdfreactor.schema.owl.Thing',. Inverse: Fundedby.
+      Givenname (-1/-1)  -> http://xmlns.com/foaf/0.1/givenName, types: 'Thing',. Inverse: Givenname.
+      Homepage (-1/-1)  -> http://xmlns.com/foaf/0.1/homepage, types: 'Document',. Inverse: Homepage.
+      InverseOf (-1/-1)  -> http://www.w3.org/2002/07/owl#inverseOf, types: 'Thing',. Inverse: InverseOf.
+      Logo (-1/-1)  -> http://xmlns.com/foaf/0.1/logo, types: 'org.ontoware.rdfreactor.schema.owl.Thing',. Inverse: Logo.
+      Maker (-1/-1)  -> http://xmlns.com/foaf/0.1/maker, types: 'Agent',. Inverse: Maker.
+      MembershipClass (-1/-1)  -> http://xmlns.com/foaf/0.1/membershipClass, types: 'Thing',. Inverse: MembershipClass.
+      Name (-1/-1)  -> http://xmlns.com/foaf/0.1/name, types: 'String',. Inverse: Name.
+      Nickname (-1/-1)  -> http://xmlns.com/foaf/0.1/nick, types: 'Thing',. Inverse: Nickname.
+      Page (-1/-1)  -> http://xmlns.com/foaf/0.1/page, types: 'Document',. Inverse: Page.
+      Phone (-1/-1)  -> http://xmlns.com/foaf/0.1/phone, types: 'Thing',. Inverse: Phone.
+      Primarytopicof (-1/-1)  -> http://xmlns.com/foaf/0.1/isPrimaryTopicOf, types: 'Document',. Inverse: Primarytopicof.
+      Termstatus (-1/-1)  -> http://www.w3.org/2003/06/sw-vocab-status/ns#term_status, types: 'Thing',. Inverse: Termstatus.
+      Theme (-1/-1)  -> http://xmlns.com/foaf/0.1/theme, types: 'org.ontoware.rdfreactor.schema.owl.Thing',. Inverse: Theme.
+      Title (-1/-1)  -> http://purl.org/dc/elements/1.1/title, types: 'Thing',. Inverse: Title.
+    JClass Concept -> http://www.w3.org/2004/02/skos/core#Concept
+      extends: org.ontoware.rdfreactor.schema.rdfs.Resource, Concept, 
+      comment: 
+      Focus (-1/-1)  -> http://xmlns.com/foaf/0.1/focus, types: 'org.ontoware.rdfreactor.schema.owl.Thing',. Inverse: Focus.
+      comment (-1/-1)  -> http://www.w3.org/2000/01/rdf-schema#comment, types: . Inverse: comment.
+      label (-1/-1)  -> http://www.w3.org/2000/01/rdf-schema#label, types: . Inverse: label.
+      member (-1/-1)  -> http://www.w3.org/2000/01/rdf-schema#member, types: . Inverse: member.
+      type (-1/-1)  -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type, types: . Inverse: type.
+    JClass LabelProperty -> http://xmlns.com/foaf/0.1/LabelProperty
+      extends: org.ontoware.rdfreactor.schema.rdfs.Resource, LabelProperty, 
+      comment: A foaf:LabelProperty is any RDF property with texual values that serve as labels.
+      comment (-1/-1)  -> http://www.w3.org/2000/01/rdf-schema#comment, types: . Inverse: comment.
+      label (-1/-1)  -> http://www.w3.org/2000/01/rdf-schema#label, types: . Inverse: label.
+      member (-1/-1)  -> http://www.w3.org/2000/01/rdf-schema#member, types: . Inverse: member.
+      type (-1/-1)  -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type, types: . Inverse: type.
+    JClass Person -> http://xmlns.com/foaf/0.1/Person
+      extends: Agent, ContactPerson, SpatialThing, org.ontoware.rdfreactor.schema.rdfs.Resource, Person, 
+      comment: A person.
+      Basednear (-1/-1)  -> http://xmlns.com/foaf/0.1/based_near, types: 'SpatialThing',. Inverse: Basednear.
+      Currentproject (-1/-1)  -> http://xmlns.com/foaf/0.1/currentProject, types: 'org.ontoware.rdfreactor.schema.owl.Thing',. Inverse: Currentproject.
+      FamilyName (-1/-1)  -> http://xmlns.com/foaf/0.1/familyName, types: 'String',. Inverse: FamilyName.
+      Familyname (-1/-1)  -> http://xmlns.com/foaf/0.1/family_name, types: 'String',. Inverse: Familyname.
+      FirstName (-1/-1)  -> http://xmlns.com/foaf/0.1/firstName, types: 'String',. Inverse: FirstName.
+      Geekcode (-1/-1)  -> http://xmlns.com/foaf/0.1/geekcode, types: 'String',. Inverse: Geekcode.
+      Image (-1/-1)  -> http://xmlns.com/foaf/0.1/img, types: 'Image',. Inverse: Image.
+      Knows (-1/-1)  -> http://xmlns.com/foaf/0.1/knows, types: 'Person',. Inverse: Knows.
+      LastName (-1/-1)  -> http://xmlns.com/foaf/0.1/lastName, types: 'String',. Inverse: LastName.
+      MyersBriggs (-1/-1)  -> http://xmlns.com/foaf/0.1/myersBriggs, types: 'String',. Inverse: MyersBriggs.
+      Pastproject (-1/-1)  -> http://xmlns.com/foaf/0.1/pastProject, types: 'org.ontoware.rdfreactor.schema.owl.Thing',. Inverse: Pastproject.
+      Plan (-1/-1)  -> http://xmlns.com/foaf/0.1/plan, types: 'String',. Inverse: Plan.
+      Publications (-1/-1)  -> http://xmlns.com/foaf/0.1/publications, types: 'Document',. Inverse: Publications.
+      SchoolHomepage (-1/-1)  -> http://xmlns.com/foaf/0.1/schoolHomepage, types: 'Document',. Inverse: SchoolHomepage.
+      Surname (-1/-1)  -> http://xmlns.com/foaf/0.1/surname, types: 'String',. Inverse: Surname.
+      Workinfohomepage (-1/-1)  -> http://xmlns.com/foaf/0.1/workInfoHomepage, types: 'Document',. Inverse: Workinfohomepage.
+      Workplacehomepage (-1/-1)  -> http://xmlns.com/foaf/0.1/workplaceHomepage, types: 'Document',. Inverse: Workplacehomepage.
+      comment (-1/-1)  -> http://www.w3.org/2000/01/rdf-schema#comment, types: . Inverse: comment.
+      label (-1/-1)  -> http://www.w3.org/2000/01/rdf-schema#label, types: . Inverse: label.
+      member (-1/-1)  -> http://www.w3.org/2000/01/rdf-schema#member, types: . Inverse: member.
+      type (-1/-1)  -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type, types: . Inverse: type.
+    JClass Document -> http://xmlns.com/foaf/0.1/Document
+      extends: org.ontoware.rdfreactor.schema.rdfs.Resource, Document, 
+      comment: A document.
+      Primarytopic (-1/-1)  -> http://xmlns.com/foaf/0.1/primaryTopic, types: 'org.ontoware.rdfreactor.schema.owl.Thing',. Inverse: Primarytopic.
+      Sha1sum_hex_ (-1/-1)  -> http://xmlns.com/foaf/0.1/sha1, types: 'Thing',. Inverse: Sha1sum_hex_.
+      Topic (-1/-1)  -> http://xmlns.com/foaf/0.1/topic, types: 'org.ontoware.rdfreactor.schema.owl.Thing',. Inverse: Topic.
+      comment (-1/-1)  -> http://www.w3.org/2000/01/rdf-schema#comment, types: . Inverse: comment.
+      label (-1/-1)  -> http://www.w3.org/2000/01/rdf-schema#label, types: . Inverse: label.
+      member (-1/-1)  -> http://www.w3.org/2000/01/rdf-schema#member, types: . Inverse: member.
+      type (-1/-1)  -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type, types: . Inverse: type.
+    JClass Organization -> http://xmlns.com/foaf/0.1/Organization
+      extends: Agent, org.ontoware.rdfreactor.schema.rdfs.Resource, Organization, 
+      comment: An organization.
+      comment (-1/-1)  -> http://www.w3.org/2000/01/rdf-schema#comment, types: . Inverse: comment.
+      label (-1/-1)  -> http://www.w3.org/2000/01/rdf-schema#label, types: . Inverse: label.
+      member (-1/-1)  -> http://www.w3.org/2000/01/rdf-schema#member, types: . Inverse: member.
+      type (-1/-1)  -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type, types: . Inverse: type.
+    JClass Group -> http://xmlns.com/foaf/0.1/Group
+      extends: Agent, org.ontoware.rdfreactor.schema.rdfs.Resource, Group, 
+      comment: A class of Agents.
+      Member (-1/-1)  -> http://xmlns.com/foaf/0.1/member, types: 'Agent',. Inverse: Member.
+      comment (-1/-1)  -> http://www.w3.org/2000/01/rdf-schema#comment, types: . Inverse: comment.
+      label (-1/-1)  -> http://www.w3.org/2000/01/rdf-schema#label, types: . Inverse: label.
+      member (-1/-1)  -> http://www.w3.org/2000/01/rdf-schema#member, types: . Inverse: member.
+      type (-1/-1)  -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type, types: . Inverse: type.
+    JClass Agent -> http://xmlns.com/foaf/0.1/Agent
+      extends: org.ontoware.rdfreactor.schema.rdfs.Resource, Agent, 
+      comment: An agent (eg. person, group, software or physical artifact).
+      AIMchatID (-1/-1)  -> http://xmlns.com/foaf/0.1/aimChatID, types: 'String',. Inverse: AIMchatID.
+      Account (-1/-1)  -> http://xmlns.com/foaf/0.1/account, types: 'OnlineAccount',. Inverse: Account.
+      Age (-1/-1)  -> http://xmlns.com/foaf/0.1/age, types: 'String',. Inverse: Age.
+      Birthday (-1/-1)  -> http://xmlns.com/foaf/0.1/birthday, types: 'String',. Inverse: Birthday.
+      Gender (-1/-1)  -> http://xmlns.com/foaf/0.1/gender, types: 'String',. Inverse: Gender.
+      HoldsAccount (-1/-1)  -> http://xmlns.com/foaf/0.1/holdsAccount, types: 'OnlineAccount',. Inverse: HoldsAccount.
+      ICQchatID (-1/-1)  -> http://xmlns.com/foaf/0.1/icqChatID, types: 'String',. Inverse: ICQchatID.
+      Interest (-1/-1)  -> http://xmlns.com/foaf/0.1/interest, types: 'Document',. Inverse: Interest.
+      JabberID (-1/-1)  -> http://xmlns.com/foaf/0.1/jabberID, types: 'String',. Inverse: JabberID.
+      MSNchatID (-1/-1)  -> http://xmlns.com/foaf/0.1/msnChatID, types: 'String',. Inverse: MSNchatID.
+      Made (-1/-1)  -> http://xmlns.com/foaf/0.1/made, types: 'org.ontoware.rdfreactor.schema.owl.Thing',. Inverse: Made.
+      Openid (-1/-1)  -> http://xmlns.com/foaf/0.1/openid, types: 'Document',. Inverse: Openid.
+      Personalmailbox (-1/-1)  -> http://xmlns.com/foaf/0.1/mbox, types: 'org.ontoware.rdfreactor.schema.owl.Thing',. Inverse: Personalmailbox.
+      Sha1sumofapersonalmailboxURIname (-1/-1)  -> http://xmlns.com/foaf/0.1/mbox_sha1sum, types: 'String',. Inverse: Sha1sumofapersonalmailboxURIname.
+      SkypeID (-1/-1)  -> http://xmlns.com/foaf/0.1/skypeID, types: 'String',. Inverse: SkypeID.
+      Status (-1/-1)  -> http://xmlns.com/foaf/0.1/status, types: 'String',. Inverse: Status.
+      Tipjar (-1/-1)  -> http://xmlns.com/foaf/0.1/tipjar, types: 'Document',. Inverse: Tipjar.
+      Topicinterest (-1/-1)  -> http://xmlns.com/foaf/0.1/topic_interest, types: 'org.ontoware.rdfreactor.schema.owl.Thing',. Inverse: Topicinterest.
+      Weblog (-1/-1)  -> http://xmlns.com/foaf/0.1/weblog, types: 'Document',. Inverse: Weblog.
+      YahoochatID (-1/-1)  -> http://xmlns.com/foaf/0.1/yahooChatID, types: 'String',. Inverse: YahoochatID.
+      comment (-1/-1)  -> http://www.w3.org/2000/01/rdf-schema#comment, types: . Inverse: comment.
+      label (-1/-1)  -> http://www.w3.org/2000/01/rdf-schema#label, types: . Inverse: label.
+      member (-1/-1)  -> http://www.w3.org/2000/01/rdf-schema#member, types: . Inverse: member.
+      type (-1/-1)  -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type, types: . Inverse: type.
+    JClass Project -> http://xmlns.com/foaf/0.1/Project
+      extends: org.ontoware.rdfreactor.schema.rdfs.Resource, Project, 
+      comment: A project (a collective endeavour of some kind).
+      comment (-1/-1)  -> http://www.w3.org/2000/01/rdf-schema#comment, types: . Inverse: comment.
+      label (-1/-1)  -> http://www.w3.org/2000/01/rdf-schema#label, types: . Inverse: label.
+      member (-1/-1)  -> http://www.w3.org/2000/01/rdf-schema#member, types: . Inverse: member.
+      type (-1/-1)  -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type, types: . Inverse: type.
+    JClass Image -> http://xmlns.com/foaf/0.1/Image
+      extends: Document, org.ontoware.rdfreactor.schema.rdfs.Resource, Image, 
+      comment: An image.
+      Depicts (-1/-1)  -> http://xmlns.com/foaf/0.1/depicts, types: 'org.ontoware.rdfreactor.schema.owl.Thing',. Inverse: Depicts.
+      Thumbnail (-1/-1)  -> http://xmlns.com/foaf/0.1/thumbnail, types: 'Image',. Inverse: Thumbnail.
+    JClass PersonalProfileDocument -> http://xmlns.com/foaf/0.1/PersonalProfileDocument
+      extends: Document, org.ontoware.rdfreactor.schema.rdfs.Resource, PersonalProfileDocument, 
+      comment: A personal profile RDF document.
+    JClass OnlineAccount -> http://xmlns.com/foaf/0.1/OnlineAccount
+      extends: org.ontoware.rdfreactor.schema.owl.Thing, org.ontoware.rdfreactor.schema.rdfs.Resource, OnlineAccount, 
+      comment: An online account.
+      Accountname (-1/-1)  -> http://xmlns.com/foaf/0.1/accountName, types: 'String',. Inverse: Accountname.
+      Accountservicehomepage (-1/-1)  -> http://xmlns.com/foaf/0.1/accountServiceHomepage, types: 'Document',. Inverse: Accountservicehomepage.
+      comment (-1/-1)  -> http://www.w3.org/2000/01/rdf-schema#comment, types: . Inverse: comment.
+      label (-1/-1)  -> http://www.w3.org/2000/01/rdf-schema#label, types: . Inverse: label.
+      member (-1/-1)  -> http://www.w3.org/2000/01/rdf-schema#member, types: . Inverse: member.
+      type (-1/-1)  -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type, types: . Inverse: type.
+    JClass OnlineGamingAccount -> http://xmlns.com/foaf/0.1/OnlineGamingAccount
+      extends: OnlineAccount, org.ontoware.rdfreactor.schema.rdfs.Resource, OnlineGamingAccount, org.ontoware.rdfreactor.schema.owl.Thing, 
+      comment: An online gaming account.
+    JClass OnlineE_commerceAccount -> http://xmlns.com/foaf/0.1/OnlineEcommerceAccount
+      extends: OnlineAccount, org.ontoware.rdfreactor.schema.rdfs.Resource, OnlineE_commerceAccount, org.ontoware.rdfreactor.schema.owl.Thing, 
+      comment: An online e-commerce account.
+    JClass OnlineChatAccount -> http://xmlns.com/foaf/0.1/OnlineChatAccount
+      extends: OnlineAccount, org.ontoware.rdfreactor.schema.rdfs.Resource, OnlineChatAccount, org.ontoware.rdfreactor.schema.owl.Thing, 
+      comment: An online chat account.
+    JClass SpatialThing -> http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing
+      extends: org.ontoware.rdfreactor.schema.rdfs.Resource, SpatialThing, 
+      comment: 
+      Basednear (-1/-1)  -> http://xmlns.com/foaf/0.1/based_near, types: 'SpatialThing',. Inverse: Basednear.
+      comment (-1/-1)  -> http://www.w3.org/2000/01/rdf-schema#comment, types: . Inverse: comment.
+      label (-1/-1)  -> http://www.w3.org/2000/01/rdf-schema#label, types: . Inverse: label.
+      member (-1/-1)  -> http://www.w3.org/2000/01/rdf-schema#member, types: . Inverse: member.
+      type (-1/-1)  -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type, types: . Inverse: type.
+    JClass ContactPerson -> http://www.w3.org/2000/10/swap/pim/contact#Person
+      extends: org.ontoware.rdfreactor.schema.rdfs.Resource, ContactPerson, 
+      comment: 
+      comment (-1/-1)  -> http://www.w3.org/2000/01/rdf-schema#comment, types: . Inverse: comment.
+      label (-1/-1)  -> http://www.w3.org/2000/01/rdf-schema#label, types: . Inverse: label.
+      member (-1/-1)  -> http://www.w3.org/2000/01/rdf-schema#member, types: . Inverse: member.
+      type (-1/-1)  -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type, types: . Inverse: type.

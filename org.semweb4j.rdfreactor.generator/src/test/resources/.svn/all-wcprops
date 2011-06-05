@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/1792/trunk/org.semweb4j.rdfreactor.generator/src/test/resources
+END
+test001.n3
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/421/trunk/org.semweb4j.rdfreactor.generator/src/test/resources/test001.n3
+END
+test002.n3
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/421/trunk/org.semweb4j.rdfreactor.generator/src/test/resources/test002.n3
+END
+simpleSchema.n3
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/1046/trunk/org.semweb4j.rdfreactor.generator/src/test/resources/simpleSchema.n3
+END
+testTemplate.n3
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/1046/trunk/org.semweb4j.rdfreactor.generator/src/test/resources/testTemplate.n3
+END
+rdfs.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/1046/trunk/org.semweb4j.rdfreactor.generator/src/test/resources/rdfs.xml
+END
+emptySchema.n3
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/1046/trunk/org.semweb4j.rdfreactor.generator/src/test/resources/emptySchema.n3
+END
+TagFilter.n3
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/57/trunk/org.semweb4j.rdfreactor.generator/src/test/resources/TagFilter.n3
+END
+owl.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/1046/trunk/org.semweb4j.rdfreactor.generator/src/test/resources/owl.xml
+END
+reac18.n3
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/1046/trunk/org.semweb4j.rdfreactor.generator/src/test/resources/reac18.n3
+END
+nie_data.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/1046/trunk/org.semweb4j.rdfreactor.generator/src/test/resources/nie_data.xml
+END
+unified_nepomuk_ontologies_merged.rdfs
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/1318/trunk/org.semweb4j.rdfreactor.generator/src/test/resources/unified_nepomuk_ontologies_merged.rdfs
+END
+ncal_data.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/1046/trunk/org.semweb4j.rdfreactor.generator/src/test/resources/ncal_data.xml
+END
+rdf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/1046/trunk/org.semweb4j.rdfreactor.generator/src/test/resources/rdf.xml
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/1792/trunk/org.semweb4j.rdfreactor.generator/src/test/resources/log4j.properties
+END
+reac15.rdfs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/813/trunk/org.semweb4j.rdfreactor.generator/src/test/resources/reac15.rdfs
+END

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/1792/trunk/org.semweb4j.rdfreactor.generator/src/main/java/org/ontoware/rdfreactor/generator
+END
+Utils.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/1728/trunk/org.semweb4j.rdfreactor.generator/src/main/java/org/ontoware/rdfreactor/generator/Utils.java
+END
+CodeGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/1765/trunk/org.semweb4j.rdfreactor.generator/src/main/java/org/ontoware/rdfreactor/generator/CodeGenerator.java
+END
+ModelReaderUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/640/trunk/org.semweb4j.rdfreactor.generator/src/main/java/org/ontoware/rdfreactor/generator/ModelReaderUtils.java
+END
+Protege.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/1311/trunk/org.semweb4j.rdfreactor.generator/src/main/java/org/ontoware/rdfreactor/generator/Protege.java
+END
+Semantics.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/1046/trunk/org.semweb4j.rdfreactor.generator/src/main/java/org/ontoware/rdfreactor/generator/Semantics.java
+END
+ModelGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/1792/trunk/org.semweb4j.rdfreactor.generator/src/main/java/org/ontoware/rdfreactor/generator/ModelGenerator.java
+END
+SourceCodeWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/1535/trunk/org.semweb4j.rdfreactor.generator/src/main/java/org/ontoware/rdfreactor/generator/SourceCodeWriter.java
+END
+NRL.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/1311/trunk/org.semweb4j.rdfreactor.generator/src/main/java/org/ontoware/rdfreactor/generator/NRL.java
+END
+JavaNamingUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/1535/trunk/org.semweb4j.rdfreactor.generator/src/main/java/org/ontoware/rdfreactor/generator/JavaNamingUtils.java
+END

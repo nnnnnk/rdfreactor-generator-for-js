@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/1535/trunk/org.semweb4j.rdfreactor.generator/src/main/java/org/ontoware/rdfreactor/schema/bootstrap
+END
+TypeUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/1319/trunk/org.semweb4j.rdfreactor.generator/src/main/java/org/ontoware/rdfreactor/schema/bootstrap/TypeUtils.java
+END
+Property.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/1535/trunk/org.semweb4j.rdfreactor.generator/src/main/java/org/ontoware/rdfreactor/schema/bootstrap/Property.java
+END
+DeprecatedProperty.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/!svn/ver/1535/trunk/org.semweb4j.rdfreactor.generator/src/main/java/org/ontoware/rdfreactor/schema/bootstrap/DeprecatedProperty.java
+END
+Class.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/!svn/ver/1535/trunk/org.semweb4j.rdfreactor.generator/src/main/java/org/ontoware/rdfreactor/schema/bootstrap/Class.java
+END
+OWL_Protege_NRL_Restriction.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/!svn/ver/1535/trunk/org.semweb4j.rdfreactor.generator/src/main/java/org/ontoware/rdfreactor/schema/bootstrap/OWL_Protege_NRL_Restriction.java
+END
+Resource.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/1535/trunk/org.semweb4j.rdfreactor.generator/src/main/java/org/ontoware/rdfreactor/schema/bootstrap/Resource.java
+END
+OwlClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/1535/trunk/org.semweb4j.rdfreactor.generator/src/main/java/org/ontoware/rdfreactor/schema/bootstrap/OwlClass.java
+END
+about.txt
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/1057/trunk/org.semweb4j.rdfreactor.generator/src/main/java/org/ontoware/rdfreactor/schema/bootstrap/about.txt
+END
+GenerateRuntime.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/!svn/ver/1057/trunk/org.semweb4j.rdfreactor.generator/src/main/java/org/ontoware/rdfreactor/schema/bootstrap/GenerateRuntime.java
+END
